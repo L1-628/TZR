@@ -1,0 +1,5 @@
+字符替换
+假设有段英文，其中有单独字母“m”被误写为“M”，请编写程序进行纠正。
+sentence = input('请输入一句带有大写M的英文句：')
+print(sentence.replace('M','m'),end = '')
+    
