@@ -1,0 +1,6 @@
+输入一个十进制整数，分别输出其二进制，八进制，小写十六进制,进制之间用逗号分隔。
+	num = eval(input('请输入一个整数'))
+two = bin(num)[2:]
+eight = oct(num)[2:]
+six = hex(num)[2:]
+print(two,eight,six,sep = ',')
