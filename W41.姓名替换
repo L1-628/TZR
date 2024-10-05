@@ -1,0 +1,9 @@
+姓名替换 
+用户输入一个姓名，将中间位用星号替换掉，以保护隐私。
+name = input('请输入一个姓名：')
+middle = len(name) // 2
+for i in range(len(name)):
+    if (i == middle):
+        print('*',end = '')
+    else:
+        print(name[i],end = '')
