@@ -1,0 +1,8 @@
+生成一个1到10的一个长字符串，每个数字间用“，”分割。
+longstr = ''
+for i in range(1,11):
+    if i == 10:
+        longstr = longstr +str(i)
+    else:
+        longstr = longstr + str(i) +','
+print(longstr)
