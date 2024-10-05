@@ -1,0 +1,13 @@
+输入三角形的三条边a、b、c，判断三条边是否能够构成三角形，如果能够构成三角形，则输出该三角形的面积，否则输出“不能构成三角形”。
+三角形的判断条件：任意两边之和大于第三边。面积公式如下： area=√(s(s-a)(s-b)(s-c)),其中s=(a+b+c)/2。
+
+import math
+a = eval(input())
+b = eval(input())
+c = eval(input())
+s = (a+b+c)/2
+if((a + b > c)&(a + c> b)&(b+ c > a)):
+    print("三角形的面积为",math.sqrt(s*(s-a)*(s-b)*(s-c)))
+else:
+    print("不能构成三角形。")
+
