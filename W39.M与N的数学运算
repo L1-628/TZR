@@ -1,0 +1,5 @@
+M与N的数学运算：输入两个数字M和N，依次输出M与N之间的和、M与N的乘积、M的N次幂、M除以N的余数、M和N中较大的值，结果之间用空格隔开
+
+M = eval(input())
+N = eval(input())
+print(M+N,M*N,M**N,M%N,max(M,N),sep = ' ')
