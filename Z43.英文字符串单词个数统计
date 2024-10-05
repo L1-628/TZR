@@ -1,0 +1,4 @@
+输入一个英文字符串，按照空格分割单词并统计单词个数
+sentence = input('请输入字符串')
+word = sentence.split(sep = ' ')
+print("单词个数:",len(word))
