@@ -1,0 +1,4 @@
+dinner=["水煮肉片","青椒炒肉","西红柿鸡蛋汤","油爆小龙虾","清蒸鲫鱼"]
+dinner.append("东坡肉")
+dinner.remove("水煮肉片")
+print(dinner)
