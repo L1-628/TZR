@@ -1,0 +1,17 @@
+输入一个整数列表，列表元素为18个，元素之间逗号隔开，编写程序，将前9个元素升序排列，
+后9个元素降序排列，并输出列表（题库编号16654）。
+输入格式
+  10, 91, 45, 68, 2, 53, 6, 100, 27, 4, 29, 77, 55, 70, 85, 25, 59, 35
+输出格式
+[2, 6, 10, 27, 45, 53, 68, 91, 100, 85, 77, 70, 59, 55, 35, 29, 25, 4]
+list = input("")
+list =list.split(",")
+for i in range(len(list)):
+    list[i]=eval(list[i])
+num=list[0:9]
+num.sort(reverse=False)
+list[0:9]=num
+num=list[9:18]
+num.sort(reverse=True)
+list[9:18]=num
+print(list)
