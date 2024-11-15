@@ -1,0 +1,16 @@
+num = input()
+num=num.split(",")
+s=0
+for i in range(len(num)):
+    num[i]=eval(num[i])
+for b in num.copy():
+    tag=True
+    if b >1:
+        for a in range(2,b):
+            if (b%a==0):
+                tag = False
+                s+=1
+                break
+        if(tag==True):
+            num.remove(b)
+print(s)
