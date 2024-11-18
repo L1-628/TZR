@@ -1,0 +1,9 @@
+#{"数学":123,"物理":109,"生物":112,"地理":234}
+object=eval(input())
+object["化学"]=205
+object["数学"]=201
+object.pop("生物","不存在")
+list=list(object.keys())
+list=sorted(list)
+for i in list:
+    print("{}:{}".format(object[i],i))
