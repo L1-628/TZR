@@ -1,0 +1,10 @@
+ls=["0","123","456","789","10"]
+t=ls.index("789",0,5)
+for i in range(len(ls)):
+    if(i==ls.index("789",0,5)+1):
+        print(t)
+ls.insert(ls.index("789",0,5)+1,"012")
+for j in (ls):
+    if j== "789":
+        ls.remove(j)
+print(ls)
