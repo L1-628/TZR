@@ -1,0 +1,4 @@
+def num(n):
+    print(bin(n),oct(n),hex(n))
+n=eval(input())
+num(n)
