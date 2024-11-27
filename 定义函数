@@ -1,0 +1,4 @@
+def song(n):
+    print("Happy birthday to you! Happy birthday to you! Happy birthday，dear "+n+", Happy birthday to you!")
+name=str(input())
+print(song(name))
