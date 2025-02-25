@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() {
+
+	char arr[] = "abc";
+	int len1 = strlen(arr);
+	int len2 = sizeof(arr) / sizeof(arr[0]);
+	printf("%d %d\n", len1, len2);//3 4
+	//字符串后面还有一个"\0"
+	return 0;
+}
